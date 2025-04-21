@@ -7,5 +7,8 @@ function solution(x, n) {
        -> [x, x+x, x+x+x, ~, x+...+x, null]
     3. slice로 마지막의 null 제거
     */
-    return (`${x} `.repeat(n).split(' ').map((element, index) => parseInt(element) * index + x).slice(0,n));
+    // return (`${x} `.repeat(n).split(' ').map((element, index) => parseInt(element) * index + x).slice(0,n));
+    
+    // Array(n).fill(x)을 알았더라면...
+    return Array(n).fill(x).map((e, i) => parseInt(e) * i + x);
 }
