@@ -23,4 +23,6 @@ function solution(n) {
     return(list.reduceRight((acc, cur, i) => {
         return acc + cur * 3 ** i;
     }, 0));
+
+    // return parseInt([...n.toString(3)].reverse().join(""), 3);
 }
