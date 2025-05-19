@@ -17,7 +17,7 @@ function solution(numbers) {
 //         }
 //     }
     
-    // #2 Set 객체를 이용해 중복 처리 - 
+    // #2 Set 객체를 이용해 중복 처리 - 0.51ms
     for (let i = 0; i < sn.length - 1; i++) {
         if (sn[i] === sn[i + 2]) continue;
         
