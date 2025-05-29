@@ -1,4 +1,6 @@
 function solution(k, score) {
+    // #1
+    /*
     const list = [];
     const answer = [];
     
@@ -17,6 +19,17 @@ function solution(k, score) {
             }
             answer.push(list[list.length-1]);
         }
+    })
+    
+    return answer;
+    */
+    
+    // #2
+    const answer = [];
+    
+    score.forEach((e, i) => {
+        const list = score.slice(0, i + 1).sort((a, b) => b - a);
+        answer.push(list.length <= k ? list[list.length - 1] : list[k-1]);
     })
     
     return answer;
