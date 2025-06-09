@@ -8,7 +8,7 @@ function solution(t, p) {
         str += t[i];
         
         if (i >= pl - 1) {
-            answer += Number(str) <= Number(p) ? 1 : 0;
+            answer += str <= p ? 1 : 0;
             str = str.slice(1);
         }
     }
