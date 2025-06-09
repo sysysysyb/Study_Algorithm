@@ -9,7 +9,7 @@ function solution(t, p) {
         
         if (i >= pl - 1) {
             answer += str <= p ? 1 : 0;
-            str = str.slice(1);
+            str = str.slice(1); // 이것 밖에 방법이 없나???
         }
     }
     
