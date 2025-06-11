@@ -15,5 +15,5 @@ function solution(answers) {
     tests.forEach(({id, score}) => {
         if (score === maxScore) answer.push(id);
     });
-    return answer.sort();
+    return answer;
 }
