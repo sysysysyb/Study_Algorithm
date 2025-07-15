@@ -7,12 +7,9 @@ function solution(s) {
         // console.log(`str : ${str}`);
         const firstStr = typeof str[0] === Number ? str[0] : str[0].toUpperCase();
         
-        if (str.length === 1) {
-            arr[idx] = firstStr;
-        } else {
-            const restStr = str.substring(1).toLowerCase();
-            arr[idx] = firstStr.concat("", restStr);
-        }
+        const restStr = str.substring(1).toLowerCase();
+        arr[idx] = firstStr.concat("", restStr);
+        
     }
     
     // console.log(arr);
