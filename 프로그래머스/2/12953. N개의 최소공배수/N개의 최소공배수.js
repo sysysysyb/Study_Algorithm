@@ -5,7 +5,7 @@ function solution(arr) {
     
     let answer = arr[0];
     const getGCD = (a, b) => b === 0 ? a : getGCD(b, a % b);
-    const getLCM = (a, b) => (a / getGCD(a, b)) * b;
+    const getLCM = (a, b) => a * b / getGCD(a, b);
     
     for (let i = 1; i < arr.length; i++) {
         answer = getLCM(answer, arr[i]);
