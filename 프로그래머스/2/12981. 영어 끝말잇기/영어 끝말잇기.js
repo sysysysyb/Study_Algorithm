@@ -18,7 +18,6 @@ function solution(n, words) {
     }
     
     if (word) {
-        console.log(idx);
         return [idx % n === 0 ? n : idx % n, Math.ceil(idx / n)]
     } else {
         return [0, 0];
